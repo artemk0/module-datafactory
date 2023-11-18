@@ -15,7 +15,7 @@
 	"require": {
 		"php": "^8.0",
 		"codeception/codeception": "^5.0.0-RC6",
-		"league/factory-muffin": "^3.3",
+		"league/factory-muffin": "dev-holix-sf-fixes as 3.3.0",
 		"league/factory-muffin-faker": "^2.3"
 	},
 	"minimum-stability": "RC",
@@ -27,5 +27,11 @@
 	"config": {
 		"classmap-authoritative": true,
 		"sort-packages": true
-	}
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/artemk0/factory-muffin"
+		}
+	]
 }
